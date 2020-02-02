@@ -51,7 +51,7 @@ func TestAny(t *testing.T) {
 				return true
 			}
 			return false
-		},  false},
+		},  true},
 	}
 	for _, tt := range any {
 		if got := Any(tt.list, tt.predicate); got != tt.want {
